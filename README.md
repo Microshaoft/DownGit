@@ -1,3 +1,11 @@
+
+# 启动程序
+```
+npm run dev
+```
+
+
+
 <h1> <img src="https://github.com/MinhasKamal/DownGit/raw/master/res/images/downgit.png" width="20" height=auto /> DownGit </h1>
 
 #### Create GitHub Resource Download Link
