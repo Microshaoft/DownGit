@@ -6,9 +6,10 @@
 npm run dev
 ```
 
-## 缺陷
+## 注意事项
 - 可能要翻墙
 - 密集下载文件可能会被 GitHub 封杀浏览器端 IP
+    - F12 -> Network 筛选 "Fetch/XHR" 请求即为下载目标文件的请求
 
 
 <h1> <img src="https://github.com/MinhasKamal/DownGit/raw/master/res/images/downgit.png" width="20" height=auto /> DownGit </h1>
