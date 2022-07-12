@@ -1,11 +1,14 @@
 
-# 打包下载 GitHub 目录/文件夹
+# 浏览器端打包下载 GitHub 目录/文件夹
 
 ## 启动程序
 ```
 npm run dev
 ```
 
+## 缺陷
+- 可能要翻墙
+- 密集下载文件可能会被 GitHub 封杀浏览器端 IP
 
 
 <h1> <img src="https://github.com/MinhasKamal/DownGit/raw/master/res/images/downgit.png" width="20" height=auto /> DownGit </h1>
