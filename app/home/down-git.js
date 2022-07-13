@@ -118,19 +118,7 @@ downGitModule.factory('downGitService', [
             requestedPromises.push(promise);
             progress.totalFiles.val = requestedPromises.length;
         }
-        function sleep (time) {
-            return new Promise((resolve) => setTimeout(resolve, time));
-          }
 
-        function getRandom (n, m) {
-            var num = Math.floor(Math.random() * (m - n + 1) + n);
-            return num;
-        }
-
-        function getRandomNum () {
-            var num = getRandom(0, 200);
-            return num
-        }
         var downloadFile = function (url, progress, toastr) {
             progress.isProcessing.val=true;
             progress.downloadedFiles.val = 0;
@@ -169,25 +157,9 @@ downGitModule.factory('downGitService', [
                 }else{
                     $http.get(repoInfo.urlPrefix+repoInfo.resPath+repoInfo.urlPostfix).then(function(response) {
                         if(response.data instanceof Array){
-                            var timeOut = getRandomNum();
-                            sleep(timeOut).then(function() { 
-                                //debugger;
-                                downloadDir(progress);
-                                console.log(timeOut);
-                            });
-                            //downloadDir(progress);
-
+                            downloadDir(progress);
                         }else{
-                            //debugger;
-                            
-                            var timeOut = getRandomNum();
-                            sleep(timeOut).then(function() {
-                                //debugger;
-                                console.log(timeOut);
-                                console.log(response.data.download_url);
-                                downloadFile(response.data.download_url, progress, toastr)
-                            });
-                            //downloadFile(response.data.download_url, progress, toastr);
+                            downloadFile(response.data.download_url, progress, toastr);
                         }
 
                     }, function(error) {
