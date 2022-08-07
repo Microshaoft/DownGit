@@ -1,8 +1,8 @@
 {
-  
-  "scripts": {
-    "test": "test",
-    "start": "node app",
-    "dev": "lite-server"
+  "scripts" : {
+      "start"   : "lite-server",
+      "dev"     : "lite-server",
+      "crash"   : "lite-server",
+      "build"   : "echo This is a Fake Building process ..."
   }
 }
